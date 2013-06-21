@@ -1,7 +1,7 @@
 var app = {
     URLs  : {
-        questions: 'http://think-content.arnia.ro/api/questions.json',
-        report: 'http://think-content.arnia.ro/api/results/submit'
+        questions: 'http://think-content.storage.serverpark.be/api/questions.json',
+        report: 'http://think-content.storage.serverpark.be/api/results/submit'
     },
     views: {},
     models: {},
