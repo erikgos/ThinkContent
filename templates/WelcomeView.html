@@ -1,0 +1,45 @@
+<div data-role="content">
+    <div id="welcomeScreen">
+        <h1>
+            ThinkContent<br/>
+            <author>by Cypress</author>
+        </h1>
+        <p>
+            A tool to assess
+            your content marketing maturity
+            in a quick and easy way
+        </p>
+        <a href="#question/<%= goToPage %>" id="startBtn" data-role="button"
+           data-icon="arrow-r" data-iconpos="right"
+           data-mini="true" data-theme="c"
+           class="btn-small"><%= startButtonMsg %></a>
+    </div>
+
+    <div data-role="popup" id="popupBasic" data-overlay-theme="a">
+        <h1>Instructions</h1>
+        <p>Your score will automatically appear after answering all 35 questions.<p/>
+        <p>After you've finished:
+        <ol>
+            <li>Add results from colleagues to increase reliability, if you want.</li>
+            <li>Receive a full report with recommendations, free of charge.</li>
+        </ol>
+        </p>
+        <a href="#question/1" data-role="button" tabindex="0" data-theme="c" id="okBtn" class="btn-small">OK</a>
+    </div>
+</div>
+<% if(showFooter) { %>
+<div data-role="footer" class="footer" data-position="fixed" data-id="think-content-footer">
+    <div class="ui-grid-a">
+        <div class="ui-block-a">
+            <div data-role="controlgroup" data-type="horizontal" tabindex="0">
+                <a href="#scores" data-role="button">Scores</a>
+                <a href="#report" data-role="button">Report</a>
+            </div>
+        </div>
+        <div class="ui-block-b">
+            <a id="checkForUpdates" href="#updates" data-role="button" data-icon="refresh"
+               data-iconpos="notext" class="pull-right"></a>
+        </div>
+    </div>
+</div>
+<% } %>

@@ -1,0 +1,226 @@
+body, html
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* General styles */
+.btn-small {
+    width: 100px;
+}
+.pull-right {
+    float: right;
+}
+/* Remove orange border around items in chrome */
+*:focus {
+    outline: 0;
+}
+/* Table code from Twitter Bootstrap */
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.table td.colleague {
+    text-align: center;
+}
+
+.table td.colleague .inputContainer,
+.table td.colleague span {
+    display: inline-block;
+    float: none;
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+
+/* Welcome screen */
+#welcomeScreen h1 author {
+    font-weight: normal;
+    font-size: 0.5em;
+}
+#welcomeScreen p {
+    max-width: 200px;
+}
+
+/* Welcome screen popup */
+#popupBasic {
+    padding: 10px;
+}
+#popupBasic ol {
+    margin: 0;
+}
+#popupBasic h1, #okBtn {
+    margin: auto;
+    text-align: center;
+}
+
+/* Footer (Score | Report | Sync) */
+.footer {
+    text-align: center;
+    height: 44px;
+}
+.header {
+    height: 44px;
+}
+
+/* Question screen */
+#category {
+    text-align:center;
+}
+#currentQ {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#pagination {
+    width: 100%;
+}
+
+/* Score screen */
+#scores-table tr:last-child td {
+    border-bottom: 1px solid rgba(0,0,0,.12)!important;
+;
+}
+
+#scores-table th {
+    padding: 0;
+}
+
+#scores-table th div {
+    padding: 5px;
+    height: 3em;
+    box-sizing: border-box;
+
+}
+
+#scores-table .thSelected div {
+      background: #ededed;
+      background: -moz-linear-gradient(top,  #ededed 0%, #d3d3d3 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#d3d3d3));
+      background: -webkit-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);
+      background: -o-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);
+      background: -ms-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);
+      background: linear-gradient(to bottom,  #ededed 0%,#d3d3d3 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#d3d3d3',GradientType=0 );
+      border: 1px solid rgba(0,0,0,.1);
+      -webkit-border-radius: 5px 5px 0px 0px;
+      border-radius: 5px 5px 0px 0px;
+      width: 100%;
+      display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+#scores-table .thSelected div span {
+    display: table-cell;
+}
+
+#scores-table td {
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+}
+
+#scores-table td.category {
+    vertical-align: middle;
+    width: 140px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#scores-table th {
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+#scores-table .selected-column {
+    border-left: 1px solid rgba(0,0,0,.05);
+    box-shadow: inset -1px 0 0 0 rgba(0,0,0,.12);
+
+}
+
+#scoresMsg {
+    text-align: center;
+}
+
+.inputContainer {
+    float:left;
+    width:35px;
+}
+
+.selected-column {
+    font-weight: bolder;
+}
+.percentSpanContainer {
+    float:left;margin-top:16px;
+}
+
+/* Radar screen */
+#radar h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#radar .ui-content {
+    padding-left:0;
+    padding-right:0;
+}
+
+canvas {
+    width: 100% !important;
+    max-width: 800px;
+    height: auto !important;
+}
+
+/* Report screen */
+#report p {
+    text-align: center;
+}
+#submit_report {
+    padding: 10px;
+}
+
+#sendResultsBtn {
+    width: 200px;
+    margin: 30px auto;
+}
+p.privacy_policy {
+    font-size: 0.7em;
+    text-align: left;
+}
+
+input.error {background-color: pink; border: 1px dashed red; color: white}

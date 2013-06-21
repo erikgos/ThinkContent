@@ -1,0 +1,91 @@
+<div data-role="header" data-position="fixed" data-id="think-content-header" class="header">
+    <a href="#" data-icon="arrow-l">Start</a>
+    <h1>Scores</h1>
+    <a href="#report" data-icon="check">Done</a>
+</div>
+
+<div data-role="content">
+    <div id="scoresMsg">
+        <h2>Enter scores from colleagues to increase reliability.</h2>
+    </div>
+
+    <div id="results">
+        <table class="table table-stroke table-stripe ui-responsive" id="scores-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th id="youSelected"><div><small>You</small></div></th>
+                <th data-priority="1"><div><small>Your colleague</small></div></th>
+                <th data-priority="1" id="avgSelected"><div><small>New average</small></div></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="category">Competencies</td>
+                <td><%= scores.you.competencies %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.competencies %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.competencies %>%</td>
+            </tr>
+
+            <tr>
+                <td class="category">Planning</td>
+                <td><%= scores.you.planning %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.planning %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.planning %>%</td>
+            </tr>
+
+            <tr>
+                <td class="category">Creation</td>
+                <td><%= scores.you.creation %>%</td>
+                <td class="colleague">
+                    <div class="inputContainer"><input type="number" value="<%= scores.yourColleague.creation %>"/></div><span>%</span>
+                </td>
+                <td><%= scores.newAverage.creation %>%</td>
+            </tr>
+
+            <tr>
+                <td class="category">Distribution</td>
+                <td><%= scores.you.distribution %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.distribution %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.distribution %>%</td>
+            </tr>
+
+            <tr>
+                <td class="category">Performance</td>
+                <td><%= scores.you.performance %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.performance %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.performance %>%</td>
+            </tr>
+
+            <tr>
+                <td class="category">Management</td>
+                <td><%= scores.you.management %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.management %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.management %>%</td>
+            </tr>
+            <tr>
+                <td class="category">Total</td>
+                <td><%= scores.you.total %>%</td>
+                <td class="colleague"><div class="inputContainer"><input type="number" value="<%= scores.yourColleague.total %>"/></div><span>%</span></td>
+                <td><%= scores.newAverage.total %>%</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+<div data-role="footer" class="footer" data-position="fixed" data-id="think-content-footer">
+    <div class="ui-grid-a">
+        <div class="ui-block-a">
+            <div data-role="controlgroup" data-type="horizontal" tabindex="0">
+                <a href="#radar" data-role="button">Radar</a>
+                <a href="#report" data-role="button">Report</a>
+            </div>
+        </div>
+        <div class="ui-block-b">
+            <a id="checkForUpdates" href="#updates" data-role="button" data-icon="refresh"
+               data-iconpos="notext" class="pull-right"></a>
+        </div>
+    </div>
+</div>

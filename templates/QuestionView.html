@@ -1,0 +1,102 @@
+<div data-role="header" data-position="fixed" data-id="think-content-header" class="header">
+    <h1><%= category %></h1>
+</div>
+
+<div data-role="content">
+    <fieldset data-role="controlgroup">
+        <legend id="currentQ"><%= text %></legend>
+
+        <input type="radio"
+               id="checkbox-mini-6"
+               name="answer"
+               value="6"
+        <% if(answer === 6) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-6">Strongly Agree</label>
+
+        <input type="radio"
+               id="checkbox-mini-5"
+               name="answer"
+               value="5"
+        <% if(answer === 5) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-5">Moderately Agree</label>
+
+        <input type="radio"
+               id="checkbox-mini-4"
+               name="answer"
+               value="4"
+        <% if(answer === 4) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-4">Mildly Agree</label>
+
+        <input type="radio"
+               id="checkbox-mini-3"
+               name="answer"
+               value="3"
+        <% if(answer === 3) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-3">Mildly Disagree</label>
+
+        <input type="radio"
+               id="checkbox-mini-2"
+               name="answer"
+               value="2"
+        <% if(answer === 2) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-2">Moderately Disagree</label>
+
+        <input type="radio"
+               id="checkbox-mini-1"
+               name="answer"
+               value="1"
+        <% if(answer === 1) { %>
+        checked="checked"
+        <% } %>
+        data-iconpos="right" />
+        <label for="checkbox-mini-1">Strongly Disagree</label>
+    </fieldset>
+</div>
+
+<div data-role="footer" class="footer" data-position="fixed" data-id="think-content-footer">
+
+    <% var previousMsg='Start',
+        nextMsg='Scores';
+
+    if (sorting_order !== 1) {
+        previousMsg='Previous';
+    }
+
+    if (sorting_order !== questionsCount) {
+        nextMsg='Next';
+    }
+    %>
+
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <a id="previousBtn" href="#" onclick="return false;" data-role="button" data-icon="arrow-l" class="ui-btn-left">
+                <%= previousMsg %>
+            </a>
+        </div>
+
+        <div class="ui-block-b">
+            <span class="ui-title" id="pagination"><%= sorting_order %> of <%= questionsCount %></span>
+        </div>
+
+        <div class="ui-block-c">
+            <a id="nextBtn" href="#" onclick="return false;" data-role="button" data-icon="arrow-r" data-iconpos="right" class="ui-btn-right">
+                <%= nextMsg %>
+            </a>
+        </div>
+    </div>
+</div>
